@@ -1,0 +1,3 @@
+HUOM!
+
+En muistanut koodatessani naita boolin kayttoa joten ohjelma kaatuu jos kysytaan numeroa ja annetaan string. Joten alkaa kopioiko suoraan tata spaghettikoodia. Korjaan kun jaksan.
