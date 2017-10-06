@@ -231,7 +231,6 @@ namespace Harjoitus1
 
             Console.ReadLine();
 
-
         }
 
     }
