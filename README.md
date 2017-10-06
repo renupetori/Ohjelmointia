@@ -1,1 +1,2 @@
-# Ohjelmointia
+# Ohjelmoinnin harjoitukset löytyy täältä.
+
