@@ -7045,11 +7045,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\renup\\Documents\\Gitti\\Ohjelmointiharkat - Ehto ja silmukka\\Harjoitus2\\Harjoitus2.csproj",
+      "projectUniqueName": "C:\\Users\\renup\\Documents\\Gitti\\Ohjelmointia\\Ehto ja silmukka\\Harjoitus2\\Harjoitus2.csproj",
       "projectName": "Harjoitus2",
-      "projectPath": "C:\\Users\\renup\\Documents\\Gitti\\Ohjelmointiharkat - Ehto ja silmukka\\Harjoitus2\\Harjoitus2.csproj",
+      "projectPath": "C:\\Users\\renup\\Documents\\Gitti\\Ohjelmointia\\Ehto ja silmukka\\Harjoitus2\\Harjoitus2.csproj",
       "packagesPath": "C:\\Users\\renup\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renup\\Documents\\Gitti\\Ohjelmointiharkat - Ehto ja silmukka\\Harjoitus2\\obj\\",
+      "outputPath": "C:\\Users\\renup\\Documents\\Gitti\\Ohjelmointia\\Ehto ja silmukka\\Harjoitus2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\renup\\AppData\\Roaming\\NuGet\\NuGet.Config",
