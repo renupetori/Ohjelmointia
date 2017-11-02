@@ -13,12 +13,13 @@ namespace Harjoitus1
             do
             {
                 Console.WriteLine();
-                Console.WriteLine("Valitse tehtävä 1,2,3,4 tai 5 syöttämällä yksi näistä luvuista");
-                Console.WriteLine("1 = Tee ohjelma, joka tulostaa N! kertoman arvon");
-                Console.WriteLine("2 = Tee ohjelma, joka laskee N ensimmäistä lukua yhteen");
-                Console.WriteLine("3 = Tee ohjelma, joka laskee N:n ensimmäisen parittoman ja parillisen lukujen summan");
-                Console.WriteLine("4 = Muokkaa ohjelmaa 2 niin, että se laskee myös negatiivisilla numeroilla.");
-                Console.WriteLine("5 = Muokkaa ohjelmaa 3 niin, että se laskee myös negatiivisilla numeroilla.");
+                Console.WriteLine("Valitse tehtävä 1,2,3,4,5 tai 6 syöttämällä yksi näistä luvuista");
+                Console.WriteLine("1 = Tee ohjelma, joka tulostaa kokonaisluvut 1-10 ja niiden neliöjuuret.");
+                Console.WriteLine("2 = Tee ohjelma, joka tulostaa kertotaulun luvuille 1-9.");
+                Console.WriteLine("3 = Tee ohjelma, joka tulostaa 20 satunnaista kokonaislukua väliltä [0-50].");
+                Console.WriteLine("4 = Kruuna tai Klaava");
+                Console.WriteLine("5 = Tee ohjelma, joka tulostaa vakioveikkauksen rivin");
+                Console.WriteLine("6 = Tee ohjelma, joka simuloi nopanheittoa 1000 kertaa");
                 Console.WriteLine("0 = poistu sovelluksesta");
                 Console.WriteLine();
                 tehtnum = int.Parse(Console.ReadLine());
@@ -33,6 +34,8 @@ namespace Harjoitus1
                     Tehtava4.Teht4();
                 if (tehtnum == 5)
                     Tehtava5.Teht5();
+                if (tehtnum == 6)
+                    Tehtava6.Teht6();
 
             } while (tehtnum != 0);
 
@@ -61,27 +64,17 @@ namespace Harjoitus1
     {
         public static void Teht2()
         {
-            int numero;
-            Console.WriteLine("Syötä numero:");
-            numero = int.Parse(Console.ReadLine());
-
-            if (numero >= 0)
-
+            for (int i = 1; i <= 9; i++)
             {
-                int summa = 0;
-
-                for (int i = 1; i <= numero; i++)
+                for (int k = 1; k <= 10; k++)
                 {
-                    summa = summa + i;
+                    int tulos = k * i;
+                    Console.WriteLine();
+                    Console.WriteLine($"{k} * {i} = {tulos}");
+                    
                 }
-                Console.WriteLine($"Tulos: {summa}");
-
+                Console.WriteLine("--------------------------");
             }
-            else
-            {
-                Console.WriteLine("Virhe!");
-            }
-
             Console.ReadLine();
 
         }
@@ -91,36 +84,24 @@ namespace Harjoitus1
     {
         public static void Teht3()
         {
-            int numero;
-            Console.WriteLine("Syötä numero:");
-            numero = int.Parse(Console.ReadLine());
+            int[] numero = new int[5];
+            Random rnd1 = new Random();
 
-            if (numero >= 0)
-
+            for (int i = 1; i <= 4; i++)
             {
-                int summa = 0;
-                int pariton = 0;
-                int pari = 0;
-                for (int i = 1; i <= numero; i++)
+                
+                for (int k = 0; k < numero.Length; k++)
                 {
-                    summa += i;
-                    if (i % 2 == 0)
-                        pari += i;
-                    else
-                        pariton += i;
+
+                    numero[k] = rnd1.Next(50);
+ 
                 }
-
-                Console.WriteLine($"Parittomien summa: {pariton}");
-                Console.WriteLine($"Parillisien summa: {pari}");
-                Console.WriteLine($"Yhteensä {summa}");
-
+                Console.Write($"Rivi {i}: ");
+                Console.Write(string.Join(", ", numero));
+                Console.WriteLine();
             }
-            else
-            {
-                Console.WriteLine("Virhe!");
-            }
-
             Console.ReadLine();
+
 
         }
 
@@ -129,39 +110,25 @@ namespace Harjoitus1
     {
         public static void Teht4()
         {
-            int numero;
-            Console.WriteLine("Syötä numero:");
-            numero = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kuinka monta kertaa haluat heittää kolikon?");
+            Console.WriteLine();
+            int i = int.Parse(Console.ReadLine());
+            int kruuna = 0;
+            int klaava = 0;
+            Random kolikko = new Random();
 
-            if (numero >= 0)
-
+            for (int k = 0; k < i; k++)
             {
-                int summa = 0;
-
-                for (int i = 1; i <= numero; i++)
-                {
-                    summa = summa + i;
-                }
-                Console.WriteLine($"Tulos: {summa}");
-
-            }
-            if (numero < 0)
-
-            {
-                int summa = 0;
-
-                for (int i = -1; i >= numero; i--)
-                {
-                    summa = summa + i;
-                }
-                Console.WriteLine($"Tulos: {summa}");
-            }
-            else
-            {
-                Console.WriteLine("Virhe!");
+                if (kolikko.Next(2) == 1)
+                    kruuna = kruuna + 1;
+                else
+                    klaava = klaava + 1;
             }
 
+            Console.WriteLine($"Rahaa heitettiin {i} kertaa.");
+            Console.WriteLine($"Klaavoja tuli {klaava} ja kruunuja {kruuna}.");
             Console.ReadLine();
+
         }
 
 
@@ -170,55 +137,49 @@ namespace Harjoitus1
     {
         public static void Teht5()
         {
-            int numero;
-            Console.WriteLine("Syötä numero:");
-            numero = int.Parse(Console.ReadLine());
 
-            if (numero >= 0)
+            string tulos;
+            Random matsi = new Random();
 
+            for (int i = 1; i < 13; i++)
             {
-                int summa = 0;
-                int pariton = 0;
-                int pari = 0;
-                for (int i = 1; i <= numero; i++)
-                {
-                    summa += i;
-                    if (i % 2 == 0)
-                        pari += i;
-                    else
-                        pariton += i;
-                }
 
-                Console.WriteLine($"Parittomien summa: {pariton}");
-                Console.WriteLine($"Parillisien summa: {pari}");
-                Console.WriteLine($"Yhteensä {summa}");
-
+                if (matsi.NextDouble() < 0.4)
+                    tulos = "1";
+                else if (matsi.NextDouble() > 0.6)
+                    tulos = "2";
+                else
+                    tulos = "X";
+                Console.WriteLine($"Rivi {i}: {tulos}");
             }
-            if (numero < 0)
+            
+            Console.ReadLine();
 
+        }
+
+    }
+
+    public class Tehtava6
+    {
+        public static void Teht6()
+        {
+
+            int heitto;
+            int kutonen = 0;
+            Random noppa = new Random();
+
+            for (int i = 1; i <= 1000; i++)
             {
-                int summa = 0;
-                int pariton = 0;
-                int pari = 0;
-                for (int i = -1; i >= numero; i--)
-                {
-                    summa += i;
-                    if (i % 2 == 0)
-                        pari += i;
-                    else
-                        pariton += i;
-                }
+                heitto = noppa.Next(1,7);
 
-                Console.WriteLine($"Parittomien summa: {pariton}");
-                Console.WriteLine($"Parillisien summa: {pari}");
-                Console.WriteLine($"Yhteensä {summa}");
+                Console.WriteLine($"{i}. {heitto}");
 
-            }
-            else
-            {
-                Console.WriteLine("Virhe!");
+                if (heitto == 6)
+                    kutonen = kutonen + 1;
             }
 
+            Console.WriteLine();
+            Console.WriteLine($"Kuutonen arvottiin {kutonen} kertaa.");
             Console.ReadLine();
 
         }
