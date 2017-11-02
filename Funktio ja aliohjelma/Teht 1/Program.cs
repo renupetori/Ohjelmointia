@@ -8,33 +8,27 @@ namespace Teht_1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Syötä luku: ");
-            string userInput = Console.ReadLine();
-            int luku = int.Parse(userInput);
-            Console.WriteLine(funktio(luku));
+            int luku = int.Parse(Console.ReadLine());
+            if (luku >0)
+                Console.WriteLine(tahtifunktio(luku));
+            else
+                Console.WriteLine($"Numero {luku} ei ole kelvollinen.");
             Console.ReadLine();
         }
 
-        static string funktio(int luku)
+        public static string tahtifunktio(int luku)
         {
-            char merkki = '*';
-            string tahdet;
-            tahdet = "";
+            char tahti = '*';
+            string tahdet = "";
 
             for (int i = 1; i <= luku; i++)
             {
-                tahdet = tahdet + merkki;
+                tahdet = tahdet + tahti;
             }
             return tahdet;
         }
-
-
-
-
     }
-
-
-
 }
