@@ -141,7 +141,7 @@ namespace Harjoitus1
             string tulos;
             Random matsi = new Random();
 
-            for (int i = 1; i < 13; i++)
+            for (int i = 1; i < 14; i++)
             {
 
                 if (matsi.NextDouble() < 0.4)

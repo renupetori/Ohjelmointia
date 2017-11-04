@@ -28,8 +28,6 @@ namespace Teht_2
                 Console.WriteLine($"Luvut {luku1} ja {luku2} ovat yhtä suuria");
                 
         }
-
-
-
+        
     }
 }

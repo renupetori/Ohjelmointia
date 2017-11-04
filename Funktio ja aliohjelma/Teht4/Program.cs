@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht3
+namespace Teht4
 {
     class Program
     {
