@@ -155,7 +155,7 @@ namespace Harjoitus1
                 Console.WriteLine($"Tulos: {summa}");
 
             }
-            if (numero < 0)
+            else if (numero < 0)
 
             {
                 int summa = 0;
@@ -204,7 +204,7 @@ namespace Harjoitus1
                 Console.WriteLine($"Yhteensä {summa}");
 
             }
-            if (numero < 0)
+            else if (numero < 0)
 
             {
                 int summa = 0;
