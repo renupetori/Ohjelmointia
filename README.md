@@ -1,1 +1,1 @@
-# Ohjelmoinnin harjoitukset löytyy täältä. Varokaa spaghettikoodia.
+# Ohjelmoinnin harjoitukset löytyy täältä.
