@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taulukko1", "Taulukko1\Taulukko1.csproj", "{EF7033AB-B65F-4CF8-B3C7-5CFD084A3DED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taulukko2", "Taulukko2\Taulukko2.csproj", "{07D32257-6F0C-46DF-B8B0-806D977EFC2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EF7033AB-B65F-4CF8-B3C7-5CFD084A3DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF7033AB-B65F-4CF8-B3C7-5CFD084A3DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF7033AB-B65F-4CF8-B3C7-5CFD084A3DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D32257-6F0C-46DF-B8B0-806D977EFC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D32257-6F0C-46DF-B8B0-806D977EFC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D32257-6F0C-46DF-B8B0-806D977EFC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D32257-6F0C-46DF-B8B0-806D977EFC2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
