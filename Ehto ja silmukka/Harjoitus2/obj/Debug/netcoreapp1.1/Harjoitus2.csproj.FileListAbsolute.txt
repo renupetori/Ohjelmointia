@@ -8,3 +8,13 @@ C:\Users\renup\Documents\Gitti\Harjoitus1\ConsoleApp1\obj\Debug\netcoreapp1.1\Ha
 C:\Users\renup\Documents\Gitti\Harjoitus1\ConsoleApp1\obj\Debug\netcoreapp1.1\Harjoitus2.AssemblyInfo.cs
 C:\Users\renup\Documents\Gitti\Harjoitus1\ConsoleApp1\obj\Debug\netcoreapp1.1\Harjoitus2.dll
 C:\Users\renup\Documents\Gitti\Harjoitus1\ConsoleApp1\obj\Debug\netcoreapp1.1\Harjoitus2.pdb
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\bin\Debug\netcoreapp1.1\Harjoitus2.deps.json
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\bin\Debug\netcoreapp1.1\Harjoitus2.runtimeconfig.json
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\bin\Debug\netcoreapp1.1\Harjoitus2.runtimeconfig.dev.json
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\bin\Debug\netcoreapp1.1\Harjoitus2.dll
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\bin\Debug\netcoreapp1.1\Harjoitus2.pdb
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\obj\Debug\netcoreapp1.1\Harjoitus2.csprojResolveAssemblyReference.cache
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\obj\Debug\netcoreapp1.1\Harjoitus2.csproj.CoreCompileInputs.cache
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\obj\Debug\netcoreapp1.1\Harjoitus2.AssemblyInfo.cs
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\obj\Debug\netcoreapp1.1\Harjoitus2.dll
+C:\Users\renup\Documents\Gitti\Ohjelmointia\Ehto ja silmukka\Harjoitus2\obj\Debug\netcoreapp1.1\Harjoitus2.pdb
