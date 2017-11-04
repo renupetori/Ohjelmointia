@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Teht1
+namespace Teht2
 {
     class Program
     {
@@ -12,8 +12,9 @@ namespace Teht1
         {
             Console.WriteLine("Syötä sana tai lause");
             string virke = Console.ReadLine();
+            int pituus = virke.Length;
 
-            for (int i = 0; i < 5; i++ )
+            for (int i = 0; i < pituus; i++)
             {
                 Console.WriteLine($"{i}. {virke}");
             }
