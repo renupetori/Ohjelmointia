@@ -19,10 +19,7 @@ namespace Kertaustehtävä_30._11
             Console.WriteLine(p.Tulostus());
 
             Console.ReadKey();
-
-
-
-
+            
         }
     }
 }
