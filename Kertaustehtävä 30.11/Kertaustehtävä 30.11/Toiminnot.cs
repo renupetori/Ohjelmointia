@@ -33,9 +33,7 @@ namespace Kertaustehtävä_30._11
             }
 
         }
-
         
-
         public string Tulostus()
         {
 
