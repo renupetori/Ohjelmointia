@@ -9,7 +9,7 @@ using System.Runtime.Caching;
 
 namespace Harjoituspeli
 {
-    class LevelUp
+    public class LevelUp
     {
         int points;
 
@@ -17,12 +17,13 @@ namespace Harjoituspeli
         {
             Console.WriteLine("Level up!");
             
-            
             Random rnd = new Random();
-            points = rnd.Next(3);
+            points = rnd.Next(1,3);
 
-            Console.WriteLine($"STR: {Character._stats["STR"]} +{points}");
+            Character._stats["LVL"] = Character._stats["LVL"] + 1;
+            Character._stats["HP"] = Character._stats["HP"] + 5;
             Character._stats["STR"] = Character._stats["STR"] + points;
+            Console.WriteLine($"STR: {Character._stats["STR"]} +{points}");
             Character._stats["DEX"] = Character._stats["DEX"] + points;
             Character._stats["VIT"] = Character._stats["VIT"] + points;
             Character._stats["INT"] = Character._stats["INT"] + points;

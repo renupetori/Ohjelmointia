@@ -22,6 +22,7 @@ namespace Harjoituspeli
             _stats = new Dictionary<string, int>()
             {
                 {"LVL", 1 },
+                {"HP", 20 },
                 {"STR", 5 },
                 {"DEX", 5 },
                 {"VIT", 5 },
